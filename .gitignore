@@ -1,0 +1,43 @@
+# --- Backend / Python ---
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+
+# IDE / Editor specific
+.vscode/
+.idea/
+
+# --- Frontend / Node ---
+
+# Dependencies
+Frontend/node_modules/
+
+# Build output folder (Vite uses 'dist')
+Frontend/dist/
+
+# Log and temp files
+Frontend/npm-debug.log*
+Frontend/yarn-error.log*
+
+
+# --- 🚨 CRITICAL: SENSITIVE FILES ---
+# NEVER commit your API credentials or user tokens.
+# These files give direct access to your Google account.
+
+Backend/credentials.json
+Backend/token.json
+
+
+# --- OPTIONAL BUT RECOMMENDED: Model & Data Files ---
+
+# The trained model is a build artifact. It's better to
+# version the training script and regenerate the model.
+Backend/email_classifier_model.joblib
+
+# The feedback CSV contains your private email data.
+corrections.csv
